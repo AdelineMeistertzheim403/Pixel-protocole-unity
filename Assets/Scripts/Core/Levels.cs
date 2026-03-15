@@ -23,8 +23,41 @@ public static class Levels
                 {
                     id = "p1",
                     tetromino = Tetromino.I,
-                    x = 5,
-                    y = 12,
+                    x = 10,
+                    y = 2,
+                    type = PlatformType.stable
+                },
+                new PlatformDef
+                {
+                    id = "p2",
+                    tetromino = Tetromino.O,
+                    x = 16,
+                    y = 4,
+                    type = PlatformType.stable
+                },
+                new PlatformDef
+                {
+                    id = "p3",
+                    tetromino = Tetromino.T,
+                    x = 21,
+                    y = 5,
+                    type = PlatformType.stable
+                },
+                new PlatformDef
+                {
+                    id = "p4",
+                    tetromino = Tetromino.L,
+                    x = 25,
+                    y = 3,
+                    rotation = 1,
+                    type = PlatformType.stable
+                },
+                new PlatformDef
+                {
+                    id = "p5",
+                    tetromino = Tetromino.Z,
+                    x = 7,
+                    y = 6,
                     type = PlatformType.stable
                 }
             },

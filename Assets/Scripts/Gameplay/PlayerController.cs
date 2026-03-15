@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed = 6f;
-    public float jumpForce = 12f;
-    public float maxFallSpeed = 18f;
+    public float jumpForce = 18f;
+    public float maxFallSpeed = 24f;
 
     [Header("Ground Check")]
     public LayerMask groundLayer;

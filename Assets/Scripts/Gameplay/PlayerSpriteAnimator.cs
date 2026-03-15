@@ -1,17 +1,12 @@
-using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerController))]
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerSpriteAnimator : MonoBehaviour
 {
-    private const string SpriteFolder = "Sprites/pixel";
-    private const string IdleSheet = "pixel_iddle";
-    private const string RunSheet = "pixel_run";
-    private const string JumpSheet = "pixel_jump";
-    private const string IdleSpriteName = "pixel_iddle_7";
-    private const string RunSpriteName = "pixel_run_0";
-    private const string JumpSpriteName = "pixel_jump_0";
+    private const string IdleTexturePath = "Assets/Sprites/pixel/pixel_iddle.png";
+    private const string RunTexturePath = "Assets/Sprites/pixel/pixel_run.png";
+    private const string JumpTexturePath = "Assets/Sprites/pixel/pixel_jump.png";
 
     private PlayerController controller;
     private SpriteRenderer spriteRenderer;
@@ -20,14 +15,16 @@ public class PlayerSpriteAnimator : MonoBehaviour
     private Sprite runSprite;
     private Sprite jumpSprite;
 
+    [SerializeField] private float runAnimationSpeed = 7f;
+
     void Awake()
     {
         controller = GetComponent<PlayerController>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        idleSprite = LoadSprite(IdleSheet, IdleSpriteName);
-        runSprite = LoadSprite(RunSheet, RunSpriteName) ?? idleSprite;
-        jumpSprite = LoadSprite(JumpSheet, JumpSpriteName) ?? idleSprite;
+        idleSprite = LoadSingleSprite(IdleTexturePath);
+        runSprite = LoadSingleSprite(RunTexturePath) ?? idleSprite;
+        jumpSprite = LoadSingleSprite(JumpTexturePath) ?? idleSprite;
 
         if (spriteRenderer.sprite == null)
         {
@@ -48,7 +45,7 @@ public class PlayerSpriteAnimator : MonoBehaviour
         }
         else if (controller.IsMoving)
         {
-            spriteRenderer.sprite = runSprite;
+            spriteRenderer.sprite = GetRunFrame();
         }
         else
         {
@@ -58,22 +55,31 @@ public class PlayerSpriteAnimator : MonoBehaviour
         spriteRenderer.flipX = !controller.FacingRight;
     }
 
-    private Sprite LoadSprite(string sheetName, string spriteName)
+    private Sprite GetRunFrame()
     {
-        Sprite[] sprites = Resources.LoadAll<Sprite>($"{SpriteFolder}/{sheetName}");
-        Sprite sprite = sprites.FirstOrDefault(candidate => candidate.name == spriteName);
-
-        if (sprite != null)
+        if (idleSprite == null || runSprite == null)
         {
-            return sprite;
+            return idleSprite;
         }
 
-        if (sprites.Length > 0)
+        int frameIndex = Mathf.FloorToInt(Time.time * runAnimationSpeed) % 2;
+        return frameIndex == 0 ? idleSprite : runSprite;
+    }
+
+    private Sprite LoadSingleSprite(string texturePath)
+    {
+        Texture2D texture = EditorAssetSpriteLoader.LoadTexture(texturePath);
+        if (texture == null)
         {
-            return sprites.OrderBy(candidate => candidate.rect.width * candidate.rect.height).Last();
+            return CreateFallbackSprite();
         }
 
-        return CreateFallbackSprite();
+        float pixelsPerUnit = texture.height * Mathf.Max(transform.lossyScale.y, 1f);
+        return Sprite.Create(
+            texture,
+            new UnityEngine.Rect(0f, 0f, texture.width, texture.height),
+            new Vector2(0.5f, 0.05f),
+            pixelsPerUnit);
     }
 
     private Sprite CreateFallbackSprite()
