@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 1e784bd11021bfd45820b9ebc57bc607
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1267101324365974631
+    second: apex_iddle_0
+  - first:
+      213: -9163089977003221327
+    second: apex_iddle_1
+  - first:
+      213: 2922262352186469742
+    second: apex_iddle_2
+  - first:
+      213: 2438500375091235402
+    second: apex_iddle_3
+  - first:
+      213: -7532866341579051001
+    second: apex_iddle_4
+  - first:
+      213: -2906081479527233244
+    second: apex_iddle_5
+  - first:
+      213: -1709889126864072890
+    second: apex_iddle_6
+  - first:
+      213: -2218487848578783523
+    second: apex_iddle_7
+  - first:
+      213: 12750437573282808
+    second: apex_iddle_8
+  - first:
+      213: 7196963901419677491
+    second: apex_iddle_9
+  - first:
+      213: -7149937806282307194
+    second: apex_iddle_10
+  - first:
+      213: 3738283717318511437
+    second: apex_iddle_11
+  - first:
+      213: -771906900308753653
+    second: apex_iddle_12
+  - first:
+      213: 5143488947630584390
+    second: apex_iddle_13
+  - first:
+      213: -9124718530227570054
+    second: apex_iddle_14
+  - first:
+      213: -5015016458215141702
+    second: apex_iddle_15
+  - first:
+      213: 33430686170738890
+    second: apex_iddle_16
+  - first:
+      213: -6592363527306129706
+    second: apex_iddle_17
+  - first:
+      213: 4972203030503601370
+    second: apex_iddle_18
+  - first:
+      213: 7415043928863827079
+    second: apex_iddle_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: apex_iddle_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 223
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9933db21f0a5a6ee0800000000000000
+      internalID: -1267101324365974631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 131
+        width: 233
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bed7cbc63a26d080800000000000000
+      internalID: -9163089977003221327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 188
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d62926026fd8820800000000000000
+      internalID: 2922262352186469742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 189
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a48f1eb2b47d120800000000000000
+      internalID: 2438500375091235402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 174
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7003fa129f1e57790800000000000000
+      internalID: -7532866341579051001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 160
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429007c9a468ba7d0800000000000000
+      internalID: -2906081479527233244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 148
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fc6f306e04548e0800000000000000
+      internalID: -1709889126864072890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_7
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 146
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6e0f64e095631e0800000000000000
+      internalID: -2218487848578783523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_8
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 120
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb4946947c4d2000800000000000000
+      internalID: 12750437573282808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 126
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337ed658980c0e360800000000000000
+      internalID: 7196963901419677491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 214
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689486a727156cc90800000000000000
+      internalID: -7149937806282307194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_11
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 100
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b85601c3d01e330800000000000000
+      internalID: 3738283717318511437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_12
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 98
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b038c6f83c2a945f0800000000000000
+      internalID: -771906900308753653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 64
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6423bad42f7516740800000000000000
+      internalID: 5143488947630584390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_14
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 79
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a7c5277dc7e5180800000000000000
+      internalID: -9124718530227570054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_15
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 59
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe49591a15176ab0800000000000000
+      internalID: -5015016458215141702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_16
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 40
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0fdcd2805c67000800000000000000
+      internalID: 33430686170738890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_17
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 49
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de4dacbc483384a0800000000000000
+      internalID: -6592363527306129706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_18
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 10
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4b948ff40d00540800000000000000
+      internalID: 4972203030503601370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apex_iddle_19
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 9
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78468ddaa2787e660800000000000000
+      internalID: 7415043928863827079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      apex_iddle_0: -1267101324365974631
+      apex_iddle_1: -9163089977003221327
+      apex_iddle_10: -7149937806282307194
+      apex_iddle_11: 3738283717318511437
+      apex_iddle_12: -771906900308753653
+      apex_iddle_13: 5143488947630584390
+      apex_iddle_14: -9124718530227570054
+      apex_iddle_15: -5015016458215141702
+      apex_iddle_16: 33430686170738890
+      apex_iddle_17: -6592363527306129706
+      apex_iddle_18: 4972203030503601370
+      apex_iddle_19: 7415043928863827079
+      apex_iddle_2: 2922262352186469742
+      apex_iddle_3: 2438500375091235402
+      apex_iddle_4: -7532866341579051001
+      apex_iddle_5: -2906081479527233244
+      apex_iddle_6: -1709889126864072890
+      apex_iddle_7: -2218487848578783523
+      apex_iddle_8: 12750437573282808
+      apex_iddle_9: 7196963901419677491
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
