@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8f89950a0297f3a4c86ef97311f84b0c
+guid: df857dbfc3132b6fb98658c3d2557a99
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4575705008361269164
-    second: pixel_jump__0
+      213: -1737076943471673413
+    second: plateforms11_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixel_jump__0
+      name: plateforms11_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 279
-        height: 283
+        width: 140
+        height: 211
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45896abb984df70c0800000000000000
-      internalID: -4575705008361269164
+      spriteID: bbf79dc29b9a4e7e0800000000000000
+      internalID: -1737076943471673413
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pixel_jump__0: -4575705008361269164
+      plateforms11_0: -1737076943471673413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

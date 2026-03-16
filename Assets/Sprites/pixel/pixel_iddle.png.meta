@@ -5,27 +5,6 @@ TextureImporter:
   - first:
       213: 6380167242334171978
     second: pixel_iddle_0
-  - first:
-      213: -7363234139076833802
-    second: pixel_iddle_1
-  - first:
-      213: 949736775087475992
-    second: pixel_iddle_2
-  - first:
-      213: 3861930901844318093
-    second: pixel_iddle_3
-  - first:
-      213: -6862062026125432115
-    second: pixel_iddle_4
-  - first:
-      213: -2379507449975728753
-    second: pixel_iddle_5
-  - first:
-      213: -924702869336704253
-    second: pixel_iddle_6
-  - first:
-      213: 8403768565556212849
-    second: pixel_iddle_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -117,19 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -137,10 +103,10 @@ TextureImporter:
       name: pixel_iddle_0
       rect:
         serializedVersion: 2
-        x: 21
+        x: 6
         y: 0
-        width: 328
-        height: 376
+        width: 299
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,165 +121,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: pixel_iddle_1
-      rect:
-        serializedVersion: 2
-        x: 179
-        y: 370
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6fdcb46009980d990800000000000000
-      internalID: -7363234139076833802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel_iddle_2
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 370
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81dc635a0942e2d00800000000000000
-      internalID: 949736775087475992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel_iddle_3
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 370
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d87d88f91b5589530800000000000000
-      internalID: 3861930901844318093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel_iddle_4
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 370
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dcaa81aa1fe05c0a0800000000000000
-      internalID: -6862062026125432115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel_iddle_5
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 370
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f851dc7d49a4afed0800000000000000
-      internalID: -2379507449975728753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel_iddle_6
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 239
-        width: 25
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 30bb66eb3abca23f0800000000000000
-      internalID: -924702869336704253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel_iddle_7
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 195
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 174729c3cfe20a470800000000000000
-      internalID: 8403768565556212849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -324,13 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       pixel_iddle_0: 6380167242334171978
-      pixel_iddle_1: -7363234139076833802
-      pixel_iddle_2: 949736775087475992
-      pixel_iddle_3: 3861930901844318093
-      pixel_iddle_4: -6862062026125432115
-      pixel_iddle_5: -2379507449975728753
-      pixel_iddle_6: -924702869336704253
-      pixel_iddle_7: 8403768565556212849
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

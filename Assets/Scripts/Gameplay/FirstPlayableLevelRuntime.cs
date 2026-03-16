@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,17 +12,6 @@ public class FirstPlayableLevelRuntime : MonoBehaviour
     private const float GroundHeight = 1.5f;
     private const float GroundY = -3.5f;
     private const float PlatformTileSize = 0.85f;
-
-    private static readonly Dictionary<Tetromino, string> TetrominoSpritePaths = new Dictionary<Tetromino, string>
-    {
-        { Tetromino.I, "Assets/Sprites/PixelProtocol/decorations/dec_001_tetromino_i_solid.svg" },
-        { Tetromino.O, "Assets/Sprites/PixelProtocol/decorations/dec_004_tetromino_o_solid.svg" },
-        { Tetromino.T, "Assets/Sprites/PixelProtocol/decorations/dec_007_tetromino_t_solid.svg" },
-        { Tetromino.L, "Assets/Sprites/PixelProtocol/decorations/dec_010_tetromino_l_solid.svg" },
-        { Tetromino.J, "Assets/Sprites/PixelProtocol/decorations/dec_013_tetromino_j_solid.svg" },
-        { Tetromino.S, "Assets/Sprites/PixelProtocol/decorations/dec_016_tetromino_s_solid.svg" },
-        { Tetromino.Z, "Assets/Sprites/PixelProtocol/decorations/dec_019_tetromino_z_solid.svg" },
-    };
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void BootstrapScene()
@@ -87,6 +75,22 @@ public class FirstPlayableLevelRuntime : MonoBehaviour
         GameObject ground = GameObject.Find(GroundName);
         if (ground != null)
         {
+            return ground;
+        }
+
+        GameObject groundPrefab = GameplayPrefabCatalog.LoadGroundPrefab();
+        if (groundPrefab != null)
+        {
+            ground = Instantiate(groundPrefab);
+            ground.name = GroundName;
+            ground.transform.position = new Vector3(0f, GroundY, 0f);
+
+            GroundPrefabAuthoring authoring = ground.GetComponent<GroundPrefabAuthoring>();
+            if (authoring != null)
+            {
+                authoring.Configure(GetGroundWidth(), GroundHeight);
+            }
+
             return ground;
         }
 
@@ -240,6 +244,15 @@ public class FirstPlayableLevelRuntime : MonoBehaviour
             return existingPlayer.gameObject;
         }
 
+        GameObject playerPrefab = GameplayPrefabCatalog.LoadPlayerPrefab();
+        if (playerPrefab != null)
+        {
+            GameObject playerFromPrefab = Instantiate(playerPrefab);
+            playerFromPrefab.name = PlayerName;
+            playerFromPrefab.transform.position = new Vector3(-6f, -1.8f, 0f);
+            return playerFromPrefab;
+        }
+
         GameObject player = new GameObject(PlayerName);
         player.transform.position = new Vector3(-6f, -1.8f, 0f);
         player.transform.localScale = Vector3.one * 4f;
@@ -248,7 +261,7 @@ public class FirstPlayableLevelRuntime : MonoBehaviour
         renderer.sortingOrder = 10;
 
         Rigidbody2D rb = player.AddComponent<Rigidbody2D>();
-        rb.gravityScale = 3.2f;
+        rb.gravityScale = 4.6f;
         rb.freezeRotation = true;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
@@ -265,7 +278,7 @@ public class FirstPlayableLevelRuntime : MonoBehaviour
 
         PlayerController controller = player.AddComponent<PlayerController>();
         controller.moveSpeed = 6f;
-        controller.jumpForce = 21f;
+        controller.jumpForce = 9f;
         controller.maxFallSpeed = 24f;
         controller.groundLayer = Physics2D.AllLayers;
         controller.groundCheck = groundCheck;
@@ -362,12 +375,7 @@ public class FirstPlayableLevelRuntime : MonoBehaviour
 
     private Sprite LoadPlatformSprite(Tetromino tetromino)
     {
-        if (!TetrominoSpritePaths.TryGetValue(tetromino, out string assetPath))
-        {
-            return null;
-        }
-
-        return EditorAssetSpriteLoader.LoadSprite(assetPath);
+        return PlatformVisualLibrary.LoadSprite(tetromino);
     }
 
     private float CreateRepeatedGroundVisuals(Transform parent, Sprite groundSprite, float targetWidth, float targetHeight)

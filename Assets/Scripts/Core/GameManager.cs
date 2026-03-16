@@ -56,6 +56,26 @@ public class GameManager : MonoBehaviour
         {
             spawnedPlayer = Instantiate(playerPrefab);
             spawnedPlayer.transform.position = new Vector3(level.spawn.x, level.spawn.y, 0);
+            AttachCameraToPlayer(spawnedPlayer.transform);
         }
+    }
+
+    private void AttachCameraToPlayer(Transform playerTransform)
+    {
+        Camera camera = Camera.main;
+        if (camera == null || playerTransform == null)
+        {
+            return;
+        }
+
+        CameraFollow2D follow = camera.GetComponent<CameraFollow2D>();
+        if (follow == null)
+        {
+            follow = camera.gameObject.AddComponent<CameraFollow2D>();
+        }
+
+        follow.offset = new Vector3(0f, 1.1f, -10f);
+        follow.smoothTime = 0.1f;
+        follow.SetTarget(playerTransform);
     }
 }
